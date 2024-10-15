@@ -1,19 +1,20 @@
 ﻿using System.Windows;
 
-namespace ABFview;
-
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
-public partial class App : Application
+namespace ABFview
 {
-    private void Application_Startup(object sender, StartupEventArgs e)
+    public partial class App : Application
     {
-        MainWindow window = new();
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            MainWindow window = new();
 
-        if (e.Args.Length == 1)
-            window.LoadAbf(e.Args[0]);
+            if (e.Args.Length == 1)
+                window.LoadAbf(e.Args[0]);
 
-        window.Show();
+            window.Show();
+        }
     }
 }
+
+
+

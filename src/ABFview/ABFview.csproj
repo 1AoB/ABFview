@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-Windows</TargetFramework>
+		<TargetFramework>net5.0-Windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<Version>1.4</Version>
 		<ApplicationIcon>Resources\Icon1.ico</ApplicationIcon>
